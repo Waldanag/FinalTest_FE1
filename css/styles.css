@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*** BODY ***/
+
+body {
+    font-family: "Be+Vietnam", sans-serif;
+    background-color: #F5F5F5;
+}
+
+/*** HEADER ***/
+
+header {
+    height: 174px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.header-nav li a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #242E52;
+}
+
+.header-nav li a:hover {
+    text-decoration: underline;
+}
+
+header button {
+    color: #fff;
+    cursor: pointer;
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    font-size: 13px;
+    font-weight: 500;
+    width: 134px;
+    height: 44px;
+}
+
+header button:hover {
+    background-color: #3CDDF3;
+    transition: all 300ms;
+}
+
+.hamb {
+    display: none;
+
+}
+
+/*** MAIN ***/
+
+/*--Principal Section Ads: LIVE, Follow for free--*/
+.section-follow {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.follow-top {
+    background-image: url("../img/padel-intro.png");
+    background-size: cover;
+    height: 461px;
+    width: 540px;
+}
+
+.follow-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 400px;
+    width: 450px;
+}
+
+.follow-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 115%;
+    text-align: right;
+}
+
+.follow-content h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 157%;
+    text-align: right;
+}
+
+.follow-content button {
+    color: #fff;
+    cursor: pointer;
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    font-size: 13px;
+    font-weight: 500;
+    width: 134px;
+    height: 44px;
+}
+
+.follow-content button:hover {
+    background-color: #3CDDF3;
+    transition: all 300ms;
+}
+
+/*--Second Section about Pros and Benefits--*/
+.section-pros-ads {
+    background-color: #8B48BF;
+    height: 168px;
+    margin-top: 90px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-pros-ads h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 115%;
+    height: 88px;
+    width: 450px;
+}
+
+.section-pros-ads p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 151%;
+    height: 88px;
+    width: 450px;
+}
+
+/*--Final Section with Best Players--*/
+
+
+
+/*** FOOTER ***/
+
+.footer-top {
+    background-color: #8B48BF;
+    height: 224px;
+    padding: 0 210px 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-top h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.footer-top button {
+    color: #8B48BF;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    font-size: 13px;
+    font-weight: 500;
+    width: 134px;
+    height: 44px;
+}
+
+.footer-top button:hover {
+    border: .3rem solid #3CDDF3;
+    transition: all 300ms;
+}
+
+.footer-bottom {
+    background-color: #1E1E26;
+    height: 247px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .rrss {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 125px;
+}
+
+.rrss-icons a i {
+    color: #fff;
+    font-size: 20px;
+    text-indent: 7px;
+}
+
+.footer-navs {
+    display: flex;
+    justify-content: space-between;
+    gap: 219px;
+}
+
+.footer-nav {
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none;
+    line-height: 34px;
+}
+
+.footer-nav ul li {
+    list-style: none;
+}
+
+.footer-nav ul li a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-nav li a:hover {
+    text-decoration: underline;
+}
+
+/*** MOBILE ***/
+
+@media(max-width: 480px) {
+    /*HEADER*/
+
+    .header-nav {
+        display: none;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .hamb {
+        display: block;
+        font-size: 3rem;
+    }
+
+    .hamb a i {
+        color: #000;
+    }
+
+    .hamb a i:hover {
+        color: #3CDDF3;
+    }
+
+    /*MAIN*/
+
+    /*--Principal Section Ads: LIVE, Follow for free--*/
+
+    .section-follow {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .follow-top {
+        height: 340px;
+        width: 400px;
+        margin-bottom: 100px;
+    }
+
+    .follow-content {
+        width: 400px;
+    }
+
+    /*--Second Section about Pros and Benefits--*/
+
+    .section-pros-ads {
+        background-color: #3CDDF3;
+        height: 306px;
+        margin-top: 40px;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    /*--Final Section with Best Players--*/
+
+    /*FOOTER*/
+
+    .footer-top {
+        background-color: #3CDDF3;
+        height: 366px;
+        padding: 40px 50px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer-top h2 {
+        text-align: center;
+    }
+
+    .footer-top button {
+        background-color: #232C50;
+        color: #fff;
+    }
+
+    .footer-top button:hover {
+        border: .3rem solid #fff;
+        transition: all 300ms;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
