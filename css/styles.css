@@ -150,6 +150,47 @@ header button:hover {
     width: 450px;
 }
 
+.section-pros-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #FAFAFA;
+    height: 428px;
+}
+
+.section-pros-cards .card {
+    height: 158px;
+    width: 553px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-pros-cards h4 {
+    color: #323851;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.38px;
+}
+
+.section-pros-cards p {
+    color: #B3B2B7;
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 25.52px;
+}
+
+.section-pros-cards button {
+    height: 43px;
+    width: 69px;
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+}
+
+
+
 /*--Final Section with Best Players--*/
 
 
@@ -241,6 +282,18 @@ footer .rrss {
     text-decoration: underline;
 }
 
+.update-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.update-contact p {
+    color: #8C8C94;
+    margin-top: 84px;
+}
+
 /*** MOBILE ***/
 
 @media(max-width: 480px) {
@@ -330,5 +383,32 @@ footer .rrss {
 
     .footer-bottom {
         flex-direction: column;
+        flex-direction: column-reverse;
+        height: 535px;
+        position: relative;
     }
-}
+
+    footer .rrss {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        width: 380px;
+    }
+
+    .rrss-icons a i {
+        text-indent: 26px;
+        letter-spacing: 26px;
+    }
+
+    .update-contact p {
+        color: #8C8C94;
+        font-size: 12.5px;
+        line-height: 18.26px;
+        margin-top: 0px;
+        position: absolute;
+        bottom: 40px;
+        left: 134px;
+
+    }
+        
+    }
