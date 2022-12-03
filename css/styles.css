@@ -39,6 +39,7 @@ header {
 
 .header-nav li a:hover {
     text-decoration: underline;
+    background-color: rgba(60, 221, 243, 0.5);
 }
 
 header button {
@@ -166,11 +167,29 @@ header button:hover {
     justify-content: space-evenly;
 }
 
+.section-pros-cards .card-content {
+    width: 437px;
+}
+
+.section-pros-cards button {
+    color: #fff;
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    height: 43px;
+    width: 69px;
+}
+
 .section-pros-cards h4 {
     color: #323851;
     font-size: 16px;
     font-weight: 700;
     line-height: 23.38px;
+    margin-top: 9px;
+    margin-bottom: 18px;
 }
 
 .section-pros-cards p {
@@ -180,20 +199,83 @@ header button:hover {
     line-height: 25.52px;
 }
 
-.section-pros-cards button {
-    height: 43px;
-    width: 69px;
-    background-color: #8B48BF;
-    border: none;
-    border-radius: 30px;
-    color: #fff;
-}
-
-
-
 /*--Final Section with Best Players--*/
 
+.section-best {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 792px;
+}
 
+.section-best h3 {
+    color: #242E53;
+    font-size: 39.21px;
+    font-weight: 700;
+    line-height: 61.41px;
+}
+
+.cards-best {
+    display: flex;
+}
+
+.sanyo-card,
+.lebron-card,
+.navarro-card {
+    background-color: #FAFAFA;
+    height: 219px;
+    position: relative;
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 17px;
+}
+
+.sanyo-card img,
+.lebron-card img,
+.navarro-card img {
+    position: absolute;
+    top: -36px;
+}
+
+.sanyo-card h4,
+.lebron-card h4,
+.navarro-card h4 {
+    color: #3F4868;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 21px;
+}
+
+.sanyo-card,
+.lebron-card,
+.navarro-card p {
+    color: #B9B9C1;
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.section-best button {
+    background-color: #8B48BFB2;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    height: 44px;
+    padding: 10px;
+    width: 134px;
+}
+
+.section-best button:hover {
+    background-color: #3CDDF3;
+    transition: all 300ms;
+}
 
 /*** FOOTER ***/
 
@@ -289,8 +371,38 @@ footer .rrss {
     align-items: flex-end;
 }
 
+.update-contact input {
+    border: none;
+    border-radius: 50px;
+    height: 44px;
+    width: 201px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.update-contact input:focus {
+    border-color: #8B48BF;
+}
+
+.update-contact button {
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    height: 42px;
+    width: 63px;
+}
+
+.update-contact button:hover {
+    background-color: #3CDDF3;
+    transition: all 300ms;
+}
+
 .update-contact p {
     color: #8C8C94;
+    font-size: 12.5px;
+    line-height: 19.26px;
     margin-top: 84px;
 }
 
@@ -299,7 +411,7 @@ footer .rrss {
 @media(max-width: 480px) {
     /*HEADER*/
 
-    .header-nav {
+    header nav {
         display: none;
     }
 
@@ -354,14 +466,46 @@ footer .rrss {
         align-items: flex-start;
     }
 
+    .section-pros-cards {
+        background-color: #F5F5F5;
+        height: 682px;
+        gap: 40px;
+        padding: 50px 0 50px 70px;
+        width: 446px;
+        position: relative;
+    }
+
+    .section-pros-cards h4 {
+        align-items: center;
+        background-color: #8B48BF4D;
+        height: 43px;
+        margin-top: 0;
+        padding: 10px 0 0 60px;
+        
+    }
+
+    .section-pros-cards button {
+        position: absolute;
+        left: 25px;
+    }
+
     /*--Final Section with Best Players--*/
+
+    .sanyo-card,
+    .navarro-card {
+        display: none;
+    }
+
+    .section-best {
+        height: 513px;
+    }
 
     /*FOOTER*/
 
     .footer-top {
         background-color: #3CDDF3;
         height: 366px;
-        padding: 40px 50px;
+        padding: 20px 0px;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -388,6 +532,10 @@ footer .rrss {
         position: relative;
     }
 
+    .footer-navs {
+        gap: 170px;
+    }
+
     footer .rrss {
         flex-direction: column-reverse;
         justify-content: space-around;
@@ -400,6 +548,11 @@ footer .rrss {
         letter-spacing: 26px;
     }
 
+    .update-contact input {
+        margin-right: 6px;
+        width: 290px;
+    }
+
     .update-contact p {
         color: #8C8C94;
         font-size: 12.5px;
@@ -408,7 +561,6 @@ footer .rrss {
         position: absolute;
         bottom: 40px;
         left: 134px;
+    }
 
-    }
-        
-    }
+}
